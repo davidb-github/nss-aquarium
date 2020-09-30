@@ -6,16 +6,23 @@ html {
     color: aliceblue;
 }
 
-section article aside {
-    border: 1px dashed blue;
+main {
+    display: flex;
 }
 
-#fishtank {}
+section, article,  aside {
+    border: 1px solid blue;
+}
 
-.fish {}
 
-.fish__name {}
 
 body {
     background-color: darkslategrey;
 }
+
+
+/* #fishtank {}
+
+.fish {}
+
+.fish__name {} */
