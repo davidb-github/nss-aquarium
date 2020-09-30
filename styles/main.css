@@ -1,5 +1,17 @@
+/* import Inter font from google fonts. */
+html {
+    font-size: 16px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
 #fishtank {}
 
 .fish {}
 
 .fish__name {}
+
+body {
+    background-color: darkslategrey;
+}
