@@ -3,8 +3,12 @@ html {
     font-size: 16px;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    color: aliceblue;
 }
 
+section article aside {
+    border: 1px dashed blue;
+}
 
 #fishtank {}
 
