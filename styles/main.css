@@ -10,7 +10,7 @@ main {
     display: flex;
 }
 
-section, article,  aside {
+section, article,  aside, div {
     border: 1px solid blue;
 }
 
