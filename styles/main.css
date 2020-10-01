@@ -1,51 +1,62 @@
 
-
 html {
     font-size: 16px;
     margin: 0;
     font-family: 'Inter', sans-serif;
-    color: aliceblue;
+    color: gray;
 }
 
+h1 {
+    text-align: center;
+}
 
+h3 {
+    text-align: center;
+}
 img {
     width: 125px;
 }
 
 .contentContainer {
     display: flex;
+    justify-content: space-between;
 }
 
 .contentContainer__left {
-    flex: 3;
+    display: flex: 3;
 }
+
+.tipsList--right {
+    border-left: 1px double black;
+}
+.travel__locations {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 .fishList {
     display: flex;
     justify-content: space-evenly;
+    border-bottom: 1px double black;
 }
 
 .fishItem {
     padding: 10px; 
 }
 
-.tipsList--right {
-    flex: 1;
+.travel__quotes {
+    display: flex;
+    text-align: center;
 }
 
-section, article,  aside {
+
+
+/* section, article,  aside {
     border: 1px solid blue;
-}
-
+} */
 
 
 body {
     background-color: darkslategrey;
 }
-
-
-/* #fishtank {}
-
-.fish {}
-
-.fish__name {} */
