@@ -22,13 +22,18 @@ img {
 
 .fishList {
     display: flex;
+    justify-content: space-evenly;
+}
+
+.fishItem {
+    padding: 10px; 
 }
 
 .tipsList--right {
     flex: 1;
 }
 
-section, article,  aside, div {
+section, article,  aside {
     border: 1px solid blue;
 }
 
