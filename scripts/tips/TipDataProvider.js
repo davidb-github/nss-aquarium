@@ -12,6 +12,9 @@ const tipCollection = [
         topic: "Fitness",
         text : "Swim laps"
 
-    }
-     
+    }  
 ]
+
+export const useTips = () => {
+    return tipCollection.slice();
+}
