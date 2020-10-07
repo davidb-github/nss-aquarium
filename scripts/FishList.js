@@ -3,12 +3,20 @@
  */
 
 // TODO: Import `useFish` from the data provider module
-import {useFish} from './FishDataProvider.js' 
+import { useFish } from './FishDataProvider.js'
+import { Fish } from './Fish.js'
+
 export const FishList = () => {
 
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".contentContainer__left")
     const fishes = useFish()
+
+    // Generate individual fish HTML representations
+    let fishHTMLRepresentations = ""
+    for (const fish of fishes) {
+        fishHTMLRepresentations += Fish(fish)
+    }
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
@@ -16,7 +24,7 @@ export const FishList = () => {
           <h3>Fish List</h3>
           
           <div class="fishContainer">
-            Placeholder for list of fish
+            ${fishHTMLRepresentations}
           </div>
         </section>
     `
