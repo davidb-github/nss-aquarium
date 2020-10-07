@@ -1,5 +1,8 @@
 // import useFish function from FishDataProvider.js
 import { useFish } from './FishDataProvider.js'
+import { FishList } from './FishList.js'
+// import FishList
+FishList();
 
 // Store return value from the useFish() function call
 const allTheFish = useFish();
