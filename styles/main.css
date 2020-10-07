@@ -1,62 +1,41 @@
+@import "./fishlist.css";
 
-html {
-    font-size: 16px;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    color: gray;
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+/*Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 3px;
 }
 
 h1 {
-    text-align: center;
+	text-align: center;
 }
 
-h3 {
-    text-align: center;
-}
 img {
-    width: 125px;
+	width: 50px;
 }
 
 .contentContainer {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
 }
 
 .contentContainer__left {
-    display: flex: 3;
+	flex: 3;
 }
 
-.tipsList--right {
-    border-left: 1px double black;
-}
-.travel__locations {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-
-.fishList {
-    display: flex;
-    justify-content: space-evenly;
-    /* border-bottom: 1px double black; */
-}
-
-.fishItem {
-    padding: 10px; 
-}
-
-.travel__quotes {
-    display: flex;
-    text-align: center;
-}
-
-
-
-/* section, article,  aside {
-    border: 1px solid blue;
-} */
-
-
-body {
-    background-color: darkslategrey;
+.contentContainer__right {
+	flex: 1;
 }
