@@ -38,7 +38,7 @@ img {
 .fishList {
     display: flex;
     justify-content: space-evenly;
-    border-bottom: 1px double black;
+    /* border-bottom: 1px double black; */
 }
 
 .fishItem {
