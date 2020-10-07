@@ -6,9 +6,23 @@
  */
 const fishCollection = [
     {
+        name: "Bubbles",
         speicies: "Blue Fin",
         length: 3.5,
-        name: "Bubbles",
+        location: "Costa Rica",
+        food: "crustaceans"
+    },
+    {
+        name: "Bubba",
+        speicies: "Blue Fin",
+        length: 3.5,
+        location: "Costa Rica",
+        food: "crustaceans"
+    },
+    {
+        name: "Carl",
+        speicies: "Blue Fin",
+        length: 3.5,
         location: "Costa Rica",
         food: "crustaceans"
     }
