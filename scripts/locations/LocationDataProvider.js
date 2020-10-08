@@ -14,5 +14,5 @@ const travelCollection = [
 ]
 
 export const returnTravelCollection = () => {
-    return travelCollection.splice();
+    return travelCollection.slice();
 }

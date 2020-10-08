@@ -6,7 +6,7 @@ import { useTips  } from './tips/TipDataProvider.js'
 import { TipList  } from './tips/TipList.js'
 // import travel functions
 import { returnTravelCollection } from './locations/LocationDataProvider.js'
-import { locationHTML } from './locations/locationHTML.js'
+import { LocationList } from './locations/LocationList.js'
 
 // invoke FishList
 FishList();
@@ -16,11 +16,11 @@ TipList();
 useTips();
 // invoke returnTravelCollection
 returnTravelCollection();
-// invoke locationHTML
-locationHTML();
+// invoke locationList
+LocationList();
 
 
-// invoke function and store return into var
-const travelCollection = returnTravelCollection();
-// Store return value from the useFish() function call
-const allTheFish = useFish();
+// // invoke function and store return into var
+// const travelCollection = returnTravelCollection();
+// // Store return value from the useFish() function call
+// const allTheFish = useFish();
