@@ -8,7 +8,7 @@ import { Fish } from './Fish.js'                // the actual fish data
 
 //get data and turn it into html and put it on the page
 export const FishList = () => {
-debugger
+
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".contentContainer__left")
     const fishes = useFish()
