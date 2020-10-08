@@ -8,17 +8,20 @@ export const TipList = () => {
     const contentElement = document.querySelector(".contentContainer__left")
     const tips = useTips()
 
+    // debug-remove
+    console.log(tips);
+
     //generate all of the HTML for each tip
     let tipHTMLRepresentations = ""
     for (const tip of tips) {
-        tipHTMLRepresentations += Tip(tips)
+        tipHTMLRepresentations += Tip(tip)
 
     }
 
     // Add to the existing HTML in the content element
     contentElement.innerHTML += `
     <section class="fishList">
-      <h3>Fish List</h3>
+      <h3>Tip List</h3>
       
       <div class="fishContainer">
         ${tipHTMLRepresentations}

@@ -12,7 +12,12 @@ const tipCollection = [
         topic: "Fitness",
         text : "Swim laps"
 
-    }  
+    },
+    {
+        topic: "Family",
+        text : "Attend lake gathering"
+
+    }   
 ]
 
 export const useTips = () => {

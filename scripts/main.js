@@ -11,6 +11,9 @@ FishList();
 // import TipList
 TipList();
 
+// import useTips
+useTips();
+
 // Store return value from the useFish() function call
 const allTheFish = useFish();
 
