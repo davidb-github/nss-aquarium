@@ -2,10 +2,11 @@
  *  FishList which renders individual fish objects as HTML
  */
 
-// TODO: Import `useFish` from the data provider module
-import { useFish } from './FishDataProvider.js'
-import { Fish } from './Fish.js'
+// depends on fish for html and provider for fish object data
+import { useFish } from './FishDataProvider.js' //what the fish should look like in html
+import { Fish } from './Fish.js'                // the actual fish data
 
+//get data and turn it into html and put it on the page
 export const FishList = () => {
 
     // Get a reference to the `<article class="content">` element
@@ -13,12 +14,12 @@ export const FishList = () => {
     const fishes = useFish()
 
     // Generate individual fish HTML representations
-    let fishHTMLRepresentations = ""
-    for (const fish of fishes) {
-        fishHTMLRepresentations += Fish(fish)
+    let fishHTMLRepresentations = ""          //var to hold a string of html elements
+    for (const fish of fishes) {              // for each javascript object, turn into html 
+      fishHTMLRepresentations += Fish(fish)   //fish should look like this
     }
 
-    // Add to the existing HTML in the content element
+    // Add to the existing HTML in the content element with ref to element we're adding fish to.
     contentElement.innerHTML += `
         <section class="fishList">
           <h3>Fish List</h3>

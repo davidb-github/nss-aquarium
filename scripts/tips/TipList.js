@@ -8,9 +8,6 @@ export const TipList = () => {
     const contentElement = document.querySelector(".contentContainer__left")
     const tips = useTips()
 
-    // debug-remove
-    console.log(tips);
-
     //generate all of the HTML for each tip
     let tipHTMLRepresentations = ""
     for (const tip of tips) {
