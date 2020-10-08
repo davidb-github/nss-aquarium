@@ -1,23 +1,23 @@
-// import useFish function from FishDataProvider.js
+// import Fish functions
 import { useFish  } from './fish/FishDataProvider.js'
 import { FishList } from './fish/FishList.js'
+// import Tips functions
 import { useTips  } from './tips/TipDataProvider.js'
 import { TipList  } from './tips/TipList.js'
+// import travel functions
+import { returnTravelCollection } from './locations/LocationDataProvider.js'
 
-
-// import FishList
+// invoke FishList
 FishList();
-
-// import TipList
+// invoke TipList
 TipList();
-
-// import useTips
+// invoke useTips
 useTips();
+// invoke returnTravelCollection
+returnTravelCollection();
 
+
+// invoke function and store return into var
+const travelCollection = returnTravelCollection();
 // Store return value from the useFish() function call
 const allTheFish = useFish();
-
-// temp: iterate through the useFish returned value function call. (fishCollection.slice())
-for (const fish of allTheFish) {
-    console.log(fish);
-}
