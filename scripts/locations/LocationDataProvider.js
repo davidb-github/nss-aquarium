@@ -1,4 +1,4 @@
-const travelCollection = [
+const locationCollection = [
     {
         country: "Mexico",
         season : "Fall"
@@ -13,6 +13,6 @@ const travelCollection = [
     }
 ]
 
-export const returnTravelCollection = () => {
-    return travelCollection.slice();
+export const returnLocationCollection = () => {
+    return locationCollection.slice();
 }

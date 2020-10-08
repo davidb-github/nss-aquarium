@@ -5,7 +5,7 @@ import { FishList } from './fish/FishList.js'
 import { useTips  } from './tips/TipDataProvider.js'
 import { TipList  } from './tips/TipList.js'
 // import travel functions
-import { returnTravelCollection } from './locations/LocationDataProvider.js'
+import { returnLocationCollection } from './locations/LocationDataProvider.js'
 import { LocationList } from './locations/LocationList.js'
 
 // invoke FishList
@@ -15,7 +15,7 @@ TipList();
 // invoke useTips
 useTips();
 // invoke returnTravelCollection
-returnTravelCollection();
+returnLocationCollection();
 // invoke locationList
 LocationList();
 

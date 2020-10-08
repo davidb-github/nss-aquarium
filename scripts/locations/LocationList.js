@@ -3,7 +3,7 @@ LocationList which renders individual location objects as HTML
 */
 
 // import external function that provides a copy of the location array
-import { returnTravelCollection } from './LocationDataProvider.js'
+import { returnLocationCollection } from './LocationDataProvider.js'
 
 // import external function that holds single location HTML
 import { locationHTML }           from './locationHTML.js'
@@ -13,7 +13,7 @@ export const LocationList = () => {
 
     // get a reference to the target html element
     const targetElement = document.querySelector(".contentContainer__left")
-    const locations = returnTravelCollection()
+    const locations = returnLocationCollection()
 
     // generate HTML for each location
     let locHTMLRep = ""
