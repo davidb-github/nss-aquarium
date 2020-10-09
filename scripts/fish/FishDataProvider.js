@@ -72,9 +72,20 @@ export const mostHolyFish = () => {
         if (fish.length % 3 === 0) {
             console.log(fish)
             holyFish.push(fish)
-        }
-       
+        }  
     }
-
     return holyFish
+}
+
+// export function to return array containing only soldier fish
+export const soldierFish = () => {
+
+    const soldiers = []
+
+    for (const fish of fishCollection) {
+        if (fish.length % 5 === 0 && fish.length %3 !== 0) {
+            soldiers.push(fish)
+        }
+    }
+    return soldiers
 }
