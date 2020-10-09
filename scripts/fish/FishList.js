@@ -3,7 +3,7 @@
  */
 
 // depends on fish for html and provider for fish object data
-import { useFish } from './FishDataProvider.js' //what the fish should look like in html
+import { useFish, mostHolyFish } from './FishDataProvider.js' //what the fish should look like in html
 import { Fish } from './Fish.js'                // the actual fish data
 
 //get data and turn it into html and put it on the page
@@ -11,7 +11,7 @@ export const FishList = () => {
 
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".contentContainer__left")
-    const fishes = useFish()
+    const fishes = mostHolyFish()
 
     // Generate individual fish HTML representations
     let fishHTMLRepresentations = ""          //var to hold a string of html elements
