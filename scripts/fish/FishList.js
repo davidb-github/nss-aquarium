@@ -22,10 +22,20 @@ const buildFishHTML = (arrayOfFish) => {
 export const FishList = () => {
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".contentContainer__left")
+    
+    // holyFish
     // populate holyfish var with value of fish objects returned by mostHolyFish() function call    
     const holyFish = mostHolyFish()
     // call buildFishHTML and pass holyFish as argument and store return value in holyFishHTML
     const holyFishHTML = buildFishHTML(holyFish)
+
+    // soldierFish
+    const soldierFishes = soldierFish()
+
+    const soldierFishHTML = buildFishHTML(soldierFishes)
+
+
+
     
 
     // Add to the existing HTML in the content element with ref to element we're adding fish to.
@@ -35,6 +45,7 @@ export const FishList = () => {
           
           <div class="fishContainer">
             ${holyFishHTML}
+            ${soldierFishHTML}
           </div>
         </section>
     `
