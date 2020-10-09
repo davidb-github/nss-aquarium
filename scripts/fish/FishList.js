@@ -31,14 +31,9 @@ export const FishList = () => {
 
     // soldierFish
     const soldierFishes = soldierFish()
-
     const soldierFishHTML = buildFishHTML(soldierFishes)
 
-
-
-    
-
-    // Add to the existing HTML in the content element with ref to element we're adding fish to.
+    // Add to existing HTML;  target is inside the element value of contentElement
     contentElement.innerHTML += `
         <section class="fishList">
           <h3>Fish List</h3>
