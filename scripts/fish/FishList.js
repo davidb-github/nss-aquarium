@@ -4,14 +4,14 @@
 
 // depends on fish for html and provider for fish object data
 import { mostHolyFish, soldierFish } from './FishDataProvider.js' //what the fish should look like in html
-import { Fish } from './Fish.js'                                           // the actual fish data
+import { Fish } from './Fish.js'                                  // the actual fish data
 
 const buildFishHTML = (arrayOfFish) => { 
     // Generate individual fish HTML representations
-    let fishHTMLRepresentations = ""          //var to hold a string of html elements
-    // fishes is the argument passed in the arrayOfFishes parameter
-    for (const fish of arrayOfFish) {              // for each javascript object, turn into html 
-      fishHTMLRepresentations += Fish(fish)   //fish should look like this
+    let fishHTMLRepresentations = ""         //var to hold a string of html elements
+    // arrayOfFish is whatever argument passed into the parameter when calling buildFishHTML
+    for (const fish of arrayOfFish) {        // for each javascript object, turn into html 
+      fishHTMLRepresentations += Fish(fish)  //fish should look like this
     }
 
     return fishHTMLRepresentations
@@ -22,11 +22,11 @@ const buildFishHTML = (arrayOfFish) => {
 export const FishList = () => {
     // Get a reference to the `<article class="content">` element
     const contentElement = document.querySelector(".contentContainer__left")
-
+    // populate holyfish var with value of fish objects returned by mostHolyFish() function call    
     const holyFish = mostHolyFish()
-    // console.log(holyFish)
+    // call buildFishHTML and pass holyFish as argument and store return value in holyFishHTML
     const holyFishHTML = buildFishHTML(holyFish)
-    // console.log(holyFishHTML)
+    
 
     // Add to the existing HTML in the content element with ref to element we're adding fish to.
     contentElement.innerHTML += `
