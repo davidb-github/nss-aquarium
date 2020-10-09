@@ -33,7 +33,7 @@ const fishCollection = [
         img: "https://images.unsplash.com/photo-1600067156933-bff4d0f0c67f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1646&q=80",
         name: "soldier-fish-1",
         species: "Yellow Fin",
-        length: 90,
+        length: 50,
         location: "Mexico",
         food: "Herbivore"
     },
@@ -41,7 +41,7 @@ const fishCollection = [
         img: "https://images.unsplash.com/photo-1600067156933-bff4d0f0c67f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1646&q=80",
         name: "soldier-fish-3",
         species: "Yellow Fin",
-        length: 155,
+        length: 100,
         location: "Mexico",
         food: "Herbivore"
     },
@@ -49,7 +49,7 @@ const fishCollection = [
         img: "https://images.unsplash.com/photo-1600067156933-bff4d0f0c67f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1646&q=80",
         name: "soldier-fish-4",
         species: "Yellow Fin",
-        length: 155,
+        length: 150,
         location: "Mexico",
         food: "Herbivore"
     },
