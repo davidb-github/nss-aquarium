@@ -34,7 +34,7 @@ const fishCollection = [
     },
     {
         img: "https://images.unsplash.com/photo-1600067156933-bff4d0f0c67f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1646&q=80",
-        name: "soldier-fish-3",
+        name: "soldier-fish-2",
         species: "Yellow Fin",
         length: 100,
         location: "Mexico",
@@ -42,7 +42,7 @@ const fishCollection = [
     },
     {
         img: "https://images.unsplash.com/photo-1600067156933-bff4d0f0c67f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1646&q=80",
-        name: "soldier-fish-4",
+        name: "soldier-fish-3",
         species: "Yellow Fin",
         length: 200,
         location: "Mexico",
