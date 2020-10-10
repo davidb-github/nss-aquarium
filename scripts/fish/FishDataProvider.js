@@ -103,6 +103,7 @@ export const commonFish = () => {
 
     const commonFishArray = []
 
+    for (fish of fishCollection)
     if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
         commonFishArray.push(fish)
     }
