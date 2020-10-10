@@ -97,3 +97,14 @@ export const soldierFish = () => {
     }
     return soldiers
 }
+
+// export function to return array containing only common fish
+export const commonFish = () => {
+
+    const commonFishArray = []
+
+    if (fish.length % 3 !== 0 && fish.length % 5 !== 0) {
+        commonFishArray.push(fish)
+    }
+    return commonFishArray
+}
