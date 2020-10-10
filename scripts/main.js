@@ -13,7 +13,7 @@ FishList();
 // invoke TipList
 TipList();
 // invoke useTips
-useTips();
+// useTips();
 // invoke returnTravelCollection
 returnLocationCollection();
 // invoke locationList
