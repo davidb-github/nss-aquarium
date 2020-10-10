@@ -55,6 +55,14 @@ const fishCollection = [
         length: 2,
         location: "Mexico",
         food: "Herbivore"
+    },
+    {
+        img: "https://images.unsplash.com/photo-1600067156933-bff4d0f0c67f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1646&q=80",
+        name: "common-fish-2",
+        species: "Yellow Fin",
+        length: 2,
+        location: "Mexico",
+        food: "Herbivore"
     }
 ]
 
